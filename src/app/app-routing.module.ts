@@ -3,9 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 // import other components
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CirclePackingComponent } from './circle-packing/circle-packing.component';
 
 // define routes
 const appRoutes: Routes = [
+  { path: 'circle-packing', component: CirclePackingComponent },
   { path: '', redirectTo: '/', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
